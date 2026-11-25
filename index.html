@@ -93,6 +93,10 @@ footer{border-top:1px solid var(--line);padding:20px;max-width:900px;margin:0 au
 </main>
 <footer>© 2026 Aeris Clips · บริการตัดต่อวิดีโอและผลิตคลิปสั้นสำหรับร้านค้าออนไลน์</footer>
 <script>
+/* Human-proxy hit counter. hits.sh needs no account and answers an SVG whose
+   title carries the count. It is injected by JS, so a crawler that does not run
+   JavaScript never increments it, and navigator.webdriver is excluded so our own
+   automation does not pollute the number. One increment per browser per day. */
 (function () {
   try {
     if (navigator.webdriver) return;
@@ -101,8 +105,10 @@ footer{border-top:1px solid var(--line);padding:20px;max-width:900px;margin:0 au
     var key = 'hit-' + day;
     if (localStorage.getItem(key)) return;
     localStorage.setItem(key, '1');
-    fetch('https://api.counterapi.dev/v1/aeris-clips/site/' + day + '/up', { mode: 'cors' }).catch(function () {});
-    fetch('https://api.counterapi.dev/v1/aeris-clips/site/total/up', { mode: 'cors' }).catch(function () {});
+    var probe = function (p) { var i = new Image(); i.referrerPolicy = 'no-referrer';
+      i.src = 'https://hits.sh/' + p + '.svg'; };
+    probe('aeris-clips-site');
+    probe('aeris-clips-site-' + day);
   } catch (e) {}
 })();
 </script>
