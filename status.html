@@ -13,18 +13,29 @@ table{border-collapse:collapse;width:100%;font-size:14px}td,th{border-bottom:1px
 code{background:#f4f7f5;padding:2px 5px;border-radius:5px;font-size:13px}
 </style></head><body>
 <h1>สถานะระบบขาย — ข้อมูลจากไฟล์จริง</h1>
-<p>สร้างเมื่อ 2026-11-25 22:20 (เวลาไทย) · หน้านี้สร้างจากข้อมูลจริงในระบบ ไม่ได้พิมพ์ด้วยมือ</p>
+<p>สร้างเมื่อ 2026-11-25 22:40 (เวลาไทย) · หน้านี้สร้างจากข้อมูลจริงในระบบ ไม่ได้พิมพ์ด้วยมือ</p>
 <div class=grid><div class=card><span>คนภายนอกเข้าชมจริง</span><b>0</b><i>unique จาก GitHub traffic (อ่านแล้วไม่ขยับ)</i></div><div class=card><span>คนสอบถามจริง</span><b>0</b><i>อีเมลที่จัดว่าเป็นคำถาม (inbound.py)</i></div><div class=card><span>คนสั่งซื้อจริง</span><b>0</b><i>ไม่นับแถวทดสอบ</i></div><div class=card><span>เงินรับจริง</span><b>0 ฿</b><i>ออเดอร์ที่ปิดการขาย</i></div></div>
 <h2>Pull request</h2>
 <table><tr><th>รายการ</th><th>ค่า</th></tr>
 <tr><td>สถานะ</td><td>open</td></tr>
 <tr><td>branch</td><td><code>phase6-sales-engine</code></td></tr>
-<tr><td>commits / ไฟล์</td><td>4 / 12</td></tr>
+<tr><td>commits / ไฟล์</td><td>5 / 13</td></tr>
 <tr><td>repo ส่วนตัว?</td><td>ใช่ — ลิงก์จะขึ้น 404 ถ้าบัญชีไม่มีสิทธิ์</td></tr>
 <tr><td>url</td><td><code>https://github.com/kongkeat938/ax-workspace/pull/12</code></td></tr></table>
-<h2>เทสต์</h2><p><code>13 passed in 0.01s</code></p>
+<h2>เทสต์</h2><p><code>13 passed in 0.02s</code></p>
 <h2>ความต้องการสด (ค้นหาวันนี้)</h2>
-<p>67 รายการที่ผ่านเกณฑ์ ≥50 · ช่องทางที่ตอบได้: 66 ทาง Bluesky (ยังตอบไม่ได้)</p>
+<p>67 โพสต์ · <b>16 ผู้เขียน</b> · ติดต่อได้โดยไม่ต้องล็อกอิน: <b>0</b>
+(66 โพสต์ตอบได้ทาง Bluesky เท่านั้น ซึ่ง AR สมัครบัญชีไม่ได้)</p>
+<h2>ช่องทางรับคำขอ + รับเงิน</h2>
+<table><tr><th>ช่องทาง</th><th>สถานะ</th></tr>
+<tr><td>GitHub Issues (ฟอร์มขอใบเสนอราคา)</td><td>เปิดใช้งาน — AR อ่านและตอบกลับผ่าน API ได้</td></tr>
+<tr><td>อีเมล araeris4770d7@fldubai.com</td><td>รับได้ ตอบกลับอัตโนมัติไม่ได้</td></tr>
+<tr><td>PromptPay QR (0 ค่าธรรมเนียม, ไม่มีค่าติดตั้ง)</td><td>ต้องใส่ PAYMENT_ID ของเจ้าของบัญชีตอนออกใบเสนอราคา (ไม่เก็บในไฟล์)</td></tr></table>
+<h2>ตัวเฝ้าระบบ (จริงตามเวลา ไม่ใช่ 24/7)</h2>
+<pre>watcher     first 2026-11-25 15:09Z · last 2026-11-25 15:39Z (0 นาทีที่แล้ว)
+state       alive · polls 5 · covered 0.5 h
+gaps        ไม่มีช่วงที่หยุดเกิน 20 นาที
+note        process-based: ถ้า pod ถูก recycle ตัวเฝ้าจะหยุด และค่านี้จะบอกว่าหยุด</pre>
 <h2>สิ่งที่ยังไม่มีหลักฐาน</h2>
 <ul><li>ผู้เข้าชมจริง 0 — ตัวนับฟรีที่ทดสอบแล้วใช้ไม่ได้ (นับตอนอ่าน หรือต้องมีบัญชี)</li>
 <li>ยังไม่มีคำถามจากลูกค้าจริง และยังไม่มีเงินเข้า</li>
