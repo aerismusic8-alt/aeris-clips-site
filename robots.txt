@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://aerismusic8-alt.github.io/aeris-clips-site/sitemap.xml
