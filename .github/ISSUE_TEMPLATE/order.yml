@@ -1,0 +1,38 @@
+name: ขอใบเสนอราคา / สั่งทำคลิป
+description: บอกสิ่งที่ต้องการ 3 อย่าง แล้วเราตอบกลับพร้อมราคา
+title: "[คำขอ] "
+labels: ["order"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ตอบ 3 ข้อนี้พอครับ เราใช้เวลาไม่เกิน 24 ชั่วโมงในการตอบ
+        ถ้าไม่สะดวกใช้ GitHub ส่งอีเมลมาที่ araeris4770d7@fldubai.com ได้เช่นกัน
+  - type: textarea
+    id: purpose
+    attributes:
+      label: 1) คลิปนี้ใช้ทำอะไร
+      description: เช่น โปรโมทสินค้า, ลง TikTok, เปิดตัวร้าน
+      placeholder: ใช้โปรโมทสินค้า ... ลง ... ต้องการความยาว ... วินาที
+    validations:
+      required: true
+  - type: input
+    id: assets
+    attributes:
+      label: 2) ลิงก์ภาพ (5-10 ภาพ)
+      description: Google Drive / Dropbox ที่เปิดให้ดาวน์โหลดได้
+      placeholder: https://drive.google.com/...
+    validations:
+      required: true
+  - type: input
+    id: deadline
+    attributes:
+      label: 3) วันที่ต้องการรับงาน
+      placeholder: ภายใน 3 วัน
+    validations:
+      required: false
+  - type: markdown
+    attributes:
+      value: |
+        ราคา: ออเดอร์แรก 750 บาท (ปกติ 1,500) · ส่งใน 48 ชั่วโมง · แก้ไข 2 ครั้ง
+        เราจะไม่ขอให้ชำระก่อนตกลงขอบเขตงาน
