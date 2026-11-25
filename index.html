@@ -92,4 +92,18 @@ footer{border-top:1px solid var(--line);padding:20px;max-width:900px;margin:0 au
 <p class="note">งานผลิตด้วยเครื่องมือ AI · ราคาเป็นบาทไทย · ไม่รับประกันยอดวิวหรือยอดขาย</p>
 </main>
 <footer>© 2026 Aeris Clips · บริการตัดต่อวิดีโอและผลิตคลิปสั้นสำหรับร้านค้าออนไลน์</footer>
+<script>
+(function () {
+  try {
+    if (navigator.webdriver) return;
+    if (/bot|crawler|spider|headless|python|curl|wget|scrapy/i.test(navigator.userAgent)) return;
+    var day = new Date().toISOString().slice(0, 10);
+    var key = 'hit-' + day;
+    if (localStorage.getItem(key)) return;
+    localStorage.setItem(key, '1');
+    fetch('https://api.counterapi.dev/v1/aeris-clips/site/' + day + '/up', { mode: 'cors' }).catch(function () {});
+    fetch('https://api.counterapi.dev/v1/aeris-clips/site/total/up', { mode: 'cors' }).catch(function () {});
+  } catch (e) {}
+})();
+</script>
 </body></html>
