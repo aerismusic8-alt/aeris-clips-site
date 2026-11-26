@@ -13,16 +13,16 @@ table{border-collapse:collapse;width:100%;font-size:14px}td,th{border-bottom:1px
 code{background:#f4f7f5;padding:2px 5px;border-radius:5px;font-size:13px}
 </style></head><body>
 <h1>สถานะระบบขาย — ข้อมูลจากไฟล์จริง</h1>
-<p>สร้างเมื่อ 2026-11-25 23:09 (เวลาไทย) · หน้านี้สร้างจากข้อมูลจริงในระบบ ไม่ได้พิมพ์ด้วยมือ</p>
-<div class=grid><div class=card><span>ผู้เข้าชมเว็บไซต์</span><b>null</b><i>ยังไม่มี analytics เว็บ — รายงาน null ไม่เดา</i></div><div class=card><span>repository traffic</span><b>0/0</b><i>views/uniques ของ repo — ไม่ใช่ผู้เข้าชมเว็บ</i></div><div class=card><span>คำถามจริง</span><b>0</b><i>inquiries.jsonl</i></div><div class=card><span>คำถามที่พร้อมเสนอราคา</span><b>0</b><i>มีภาพ + ถามราคา/กำหนดส่ง</i></div><div class=card><span>ออเดอร์จริง</span><b>0</b><i>ไม่นับ test data</i></div><div class=card><span>ชำระแล้ว</span><b>0</b><i>ต้องมี ref + ผู้ตรวจยอด</i></div><div class=card><span>ส่งมอบแล้ว</span><b>0</b><i>ต้องมีลิงก์ไฟล์</i></div><div class=card><span>เงินรับจริง</span><b>0 ฿</b><i>paid orders</i></div><div class=card><span>ต้นทุนเงินสด</span><b>0.0 ฿</b><i></i></div><div class=card><span>กำไรสุทธิ</span><b>0.0 ฿</b><i></i></div></div>
+<p>สร้างเมื่อ 2026-11-26 08:48 (เวลาไทย) · หน้านี้สร้างจากข้อมูลจริงในระบบ ไม่ได้พิมพ์ด้วยมือ</p>
+<div class=grid><div class=card><span>ผู้เข้าชมเว็บไซต์</span><b>null</b><i>ยังไม่มี analytics เว็บ — รายงาน null ไม่เดา</i></div><div class=card><span>repository traffic</span><b>0/0</b><i>views/uniques ของ repo — ไม่ใช่ผู้เข้าชมเว็บ</i></div><div class=card><span>คำถามจริง</span><b>0</b><i>inquiries.jsonl</i></div><div class=card><span>คำถามที่พร้อมเสนอราคา</span><b>0</b><i>มีภาพ + ถามราคา/กำหนดส่ง</i></div><div class=card><span>ออเดอร์จริง</span><b>0</b><i>ไม่นับ test data</i></div><div class=card><span>ชำระแล้ว</span><b>0</b><i>ต้องมี ref + ผู้ตรวจยอด</i></div><div class=card><span>ส่งมอบแล้ว</span><b>0</b><i>ต้องมีลิงก์ไฟล์</i></div><div class=card><span>เงินรับจริง</span><b>0 ฿</b><i>paid orders</i></div><div class=card><span>ต้นทุนเงินสด</span><b>0.0 ฿</b><i></i></div><div class=card><span>กำไรสุทธิ</span><b>0.0 ฿</b><i></i></div><div class=card><span>สถานะการขาย</span><b>BLOCKED</b><i>NO SALES / NO OUTBOUND — Red Team STOP (2026-11-26)</i></div></div>
 <h2>Pull request</h2>
 <table><tr><th>รายการ</th><th>ค่า</th></tr>
 <tr><td>สถานะ</td><td>open</td></tr>
 <tr><td>branch</td><td><code>phase6-sales-engine</code></td></tr>
-<tr><td>commits / ไฟล์</td><td>7 / 19</td></tr>
+<tr><td>commits / ไฟล์</td><td>10 / 34</td></tr>
 <tr><td>repo ส่วนตัว?</td><td>ใช่ — ลิงก์จะขึ้น 404 ถ้าบัญชีไม่มีสิทธิ์</td></tr>
 <tr><td>url</td><td><code>https://github.com/kongkeat938/ax-workspace/pull/12</code></td></tr></table>
-<h2>เทสต์</h2><p><code>27 passed in 0.52s</code></p>
+<h2>เทสต์</h2><p><code>1 failed, 37 passed in 0.47s</code></p>
 <h2>ความต้องการสด (ค้นหาวันนี้)</h2>
 <p>67 โพสต์ · <b>16 ผู้เขียน</b> · ติดต่อได้โดยไม่ต้องล็อกอิน: <b>0</b>
 (66 โพสต์ตอบได้ทาง Bluesky เท่านั้น ซึ่ง AR สมัครบัญชีไม่ได้)</p>
@@ -32,9 +32,9 @@ code{background:#f4f7f5;padding:2px 5px;border-radius:5px;font-size:13px}
 <tr><td>อีเมล araeris4770d7@fldubai.com</td><td>รับได้ ตอบกลับอัตโนมัติไม่ได้</td></tr>
 <tr><td>PromptPay QR (0 ค่าธรรมเนียม, ไม่มีค่าติดตั้ง)</td><td>ต้องใส่ PAYMENT_ID ของเจ้าของบัญชีตอนออกใบเสนอราคา (ไม่เก็บในไฟล์)</td></tr></table>
 <h2>ตัวเฝ้าระบบ (จริงตามเวลา ไม่ใช่ 24/7)</h2>
-<pre>watcher     first 2026-11-25 15:09Z · last 2026-11-25 15:59Z (10 นาทีที่แล้ว)
-state       alive · polls 5 · covered 0.8 h
-gaps        1 ช่วงที่หยุด: 20m @ 25 15:39Z
+<pre>watcher     first 2026-11-25 15:09Z · last 2026-11-25 16:45Z (543 นาทีที่แล้ว)
+state       STOPPED · polls 5 · covered 0.8 h
+gaps        1 ช่วงที่หยุด: 66m @ 25 15:39Z
 note        process-based: ถ้า pod ถูก recycle ตัวเฝ้าจะหยุด และค่านี้จะบอกว่าหยุด</pre>
 <h2>สิ่งที่ยังไม่มีหลักฐาน</h2>
 <ul><li>ผู้เข้าชมจริง 0 — ตัวนับฟรีที่ทดสอบแล้วใช้ไม่ได้ (นับตอนอ่าน หรือต้องมีบัญชี)</li>
